@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Miguel Montilla CV</title>
+</head>
+<body>
+
+    <!-- ESTE ES EL INICIO DE LOS MODALES  -->
+<div>
+    <div id="seemore" class="modal">
+        <p><u>Algunos de los proyectos que trabaje fueron:</u></p>
+        <br>
+        <ul>
+            <li><b>Transferencias Internacionales:</b></li>
+            <ul>
+                <li>Este proyecto constaba de dos partes: Inicio y Cierre. </li> <li><u>INICIO:</u> Trataba de buscar mediante correo las notificaciones sobre las transacciones que se habian realizado. Luego se validaba el pago mediante una busqueda del cliente dentro del core bancario y para finalizar extraia la informacion que iba a necesitar del cliente y lo guardaba en la cola de Automation Anywhere.</li>
+                <li><u>CIERRE:</u> Finalizando la transferencia, mediante la cola, toma un cliente para procesarlo. Dentro de un aplicativo AS400 se registraba la transferencia y notificando al final el estatus de dicho proceso.</li>
+            </ul>
+            <br>
+            <li><b>Solicitudes de Tarjetas de Credito Preaprobadas</b></li>
+            <ul>
+                <li>Este proyecto, mediante un "trigger" se encarga de tomar y extraer informacion del cliente que han colocado dentro de un excel. Luego se colocaban en la cola para ser procesados individual. Al final se valida al cliente, se coloca su informacion y aprueba la tarjeta de cada cliente en la plataforma indicada.</li>
+            </ul>
+            <br>
+            <li><b>Cuadre de pago de tarjetas de credito</b></li>
+            <ul>
+                <li>Este proyecto era uno de los mas extensos. pero en resumen validaba la informacion de varios excel para luego realizar un reporte de cada calculo realizado como: Impuestos, Cuadres del dia, Journals y mas... luego estos reportes se mandaban por correo a diferentes departamento.</li>
+            </ul>
+        </ul>
+      </div>
+
+      <div id="welcome" class="modal">
+        <p>Bienvenido/a! <b>Ciertos elementos</b> donde el cursor se coloque como <b>"Pointer"</b> puede desplegar mas informacion. <b>Descubrelos... :)</b></p>
+      </div>
+
+      <div id="address" class="modal modal-mapa">
+        <img class="mapa" src="./assets/mapa.png" alt="">
+      </div>
+
+      <div id="itla" class="modal">
+        <img class="mapa" src="./assets/itla.jpg" alt="">
+      </div>
+
+      <div id="koe" class="modal">
+        <img class="mapa" src="./assets/koe.jpg" alt="">
+      </div>
+
+      <div id="aac" class="modal">
+        <img class="mapa" src="./assets/aac.jpg" alt="">
+      </div>
+</div>
+      <!-- ESTE ES EL FINAL DE LOS MODALES -->
+
+      <a href="#welcome" rel="modal:open" id="bienvenida" style="display: none;"></a>
+    
+    <div class="header">
+        <div class="titles">
+            <h1>Miguel Angel Montilla Colon</h1>
+            <h2>Tecnico en Desarrollo de Software</h2>
+        </div>
+        <div class="extra" id="translate">
+            <span class="material-symbols-outlined">
+                translate
+            </span>
+        </div>
+    </div>
+
+    
+
+    <div class="container">
+
+        <div class="section-izq">
+
+            <div class="profile">
+
+                <div class="subheader">
+                    <img src="./assets/perfil.png" alt="">
+                    <p class="subtitle">Datos Personales</p>
+                </div>
+    
+                <hr class="line">
+                <br>
+    
+                <!-- row -->
+    
+                <div class="row">
+    
+                    <div class="column" >
+                        <div class="list-profile">
+                            <ul>
+                                <li><b>Fecha de Nacimiento:</b></li>
+                                <li><a href="#address" rel="modal:open"><b>Direccion:</b></a></li>
+                                <li><b>Cedula:</b></li>
+                                <li><b>Telefono Cel.:</b></li>
+
+                                <br>
+                                <br>
+                                <br>
+                                <!-- <div class="espacio"></div> -->
+
+                                <li class="espacio links" style="color: blue;"><b><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mikemiguelangel@hotmail.com&su=Queremos Contratarte!">Mikemiguelangel@Hotmail.com</a></b></li>
+                                <li class="links" style="color: var(--title-name);"><b><a href="https://miguelac.netlify.app/">Miguelac.Netlify.App</a></b></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                    <div class="column">
+                        <div class="list-profile">
+                            <ul>
+                                <li>20 / Dic / 1999</li>
+                                <li><a href="#address" rel="modal:open">Santo Domingo, Republica Dominicana.</a></li>
+                                <li>402-1536350-4</li>
+                                <li>(829) 512-5041</li>
+                                <br>
+                                <a href="./assets/CV Actual [Abril2024] Digital.pdf" download="MiguelMontillaCV">
+                                    <li class="download">Download CV</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="column" style="background-color: var(--gray); height: 100px;"></div> -->
+    
+                    
+    
+                </div>
+    
+    
+            </div>
+    
+    
+            <div class="education">
+    
+                <div class="subheader">
+                    <img src="./assets/formacion.png" alt="">
+                    <p class="subtitle">Formacion Academica</p>
+                </div>
+                
+                <hr class="line">
+                
+                <!-- row -->
+                
+                <div class="row">
+    
+                    <br>
+                    
+                    <p><b>Bachiller Tecnico Informatica (Modulo Tecnico Profesional)</b></p>
+    
+                    <div class="column" >
+                        <div class="list-profile">
+                            <ul>
+                                <li>a)Programacion</li>
+                                <li>c)Base de datos</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                    <div class="column">
+                        <div class="list-profile">
+                            <ul>
+                                <li>b)Diseño Pagina Web</li>
+                                <li>d)Redes</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="column" style="background-color: var(--gray); height: 100px;"></div> -->
+    
+                </div>
+    
+    
+    
+                <br>
+                <!-- row -->
+                
+                <div class="row"><a href="#itla" rel="modal:open">
+                    
+                    <p><b>ITLA: Tecnologo en Desarrollo de Software </b></p>
+    
+                    <div class="column" >
+                        <div class="list-profile">
+                            <ul>
+                                <li>a) PHP</li>
+                                <li>c) HTML y CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                    <div class="column">
+                        <div class="list-profile">
+                            <ul>
+                                <li>b) Sql Server y Oracle</li>
+                                <li>d) Javascript (React, Angular)</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="column"></div>
+    
+                </a></div>
+    
+    
+            </div>
+    
+    
+    
+            <div class="experience">
+    
+                <div class="subheader">
+                    <img src="./assets/experiencia.png" alt="">
+                    <p class="subtitle">Experiencia Laboral</p>
+                </div>
+    
+                <hr class="line">
+                <br>
+    
+                <!-- row -->
+    
+                <div class="row">
+    
+                    <div class="column-70" >
+    
+                        <div class="exp-box">
+                            <div class="exp-img">
+                                <img src="./assets/brrdlogo.png" alt="">
+                            </div>
+                            <div class="exp-info"><a href="#seemore" rel="modal:open">
+                                <p>Ingeniero en Desarrollo de Aplicaciones Robotizadas</p>
+                                <span class="institucion">Banco Banreservas</span> (Oct 2021 – Abr 2024) <b class="ft">Jornada Completa</b>
+                                <ul>
+                                    <p class="quote">En <span class="bold">Automation Anywhere</span> me dedicaba a automatizar dife-
+                                        rentes procesos como “Tarjetas de Credito Preaprobadas”
+                                        el cual llegamos a la meta de 1 millon de tarjetas al año. 
+                                        Tambien me encargaba de darle mantenimiento a los pro-
+                                        cesos nuevos y/o existentes que presentaban algun error.
+                                        <span class="seemore">Click para leer mas!</span>
+                                    </p>
+                                </ul>
+                            </a></div>
+                        </div>
+                               
+                    </div>
+
+                    
+    
+    
+                    <div class="column-30"></div>
+    
+    
+    
+    
+                    <div class="column-70" >
+    
+                        <div class="exp-box">
+                            <div class="exp-img">
+                                <img src="./assets/disacomplogo.png" alt="">
+                            </div>
+                            <div class="exp-info">
+                                <p>Programador Junior</p>
+                                <span class="institucion">Disacomp SRL</span> (Ene-Abr 2020) <b>Pasantia</b>
+                                <ul>
+                                    <p class="quote">Aquí nos encargaban la tarea de extraer y mostrar 
+                                        datos de una API, para luego plasmarla mediante 
+                                        tablas utilizando la tecnología de ASP.net
+               
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+                      
+                               
+                    </div>
+    
+    
+                    <div class="column-30"></div>
+    
+    
+    
+    
+    
+                    <div class="column-70" >
+    
+                        <div class="exp-box">
+                            <div class="exp-img">
+                                <img src="./assets/brrdlogo.png" alt="">
+                            </div>
+                            <div class="exp-info">
+                                <p>Ayudante en Soporte Tecnico en Soporte Infraestructura TI</p>
+                                <span class="institucion">Banco Banreservas</span> (Oct-Dic 2017) <b>Pasantia</b>
+                                <ul>
+                                    <p class="quote">Como ayudante me enseñaron los diferentes metodos 
+                                        de soporte tanto para software como para hardware.
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+                      
+                               
+                    </div>
+    
+    
+                    <div class="column-30"></div>
+    
+    
+                    
+    
+                </div>
+    
+    
+            </div>
+    
+    
+    
+    
+    
+            <div class="knowledge">
+    
+                <div class="subheader">
+                    <img src="./assets/brain.png" alt="">
+                    <p class="subtitle">Conocimientos</p>
+                </div>
+    
+                <hr class="line">
+                <br>
+    
+                <!-- row -->
+    
+                <div class="row">
+    
+                    <div class="column-4" >
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/en.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Ingles Avanzado</p>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/ms.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Microsoft Office</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/jira.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Jira, Confluence</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+    
+                    <div class="column-4">
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/aa.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Automation Anywhere</p>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/ui.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Ui Path</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/py.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Python</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+    
+                    <div class="column-4">
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/htcsjs.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>HTML, CSS, Javascript</p>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/re.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>React, Angular</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/sql.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>SQL Server</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="column-4">
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/fig.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/xd.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Adobe XD</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="content-box">
+                            <div class="box-logo">
+                                <img src="./assets/git.png" alt="">
+                            </div>
+                            <div class="box-name">
+                                <p>Git, Gitlab</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="column-4"></div>
+    
+                    
+    
+                </div>
+    
+    
+            </div>
+    
+    
+    
+            
+            
+        </div>
+
+        <div class="section-der">
+
+            <div class="container-der">
+
+                <div class="img-profile">
+                    <img src="./assets/Foto.png" alt="">
+                </div>
+
+                <div class="cursos">
+                    <p class="subtitle">Cursos</p>
+                    <hr class="lineblack">
+                    <ul>
+                        <li>(2009) Manejo Paquete Office</li>
+                        <li>(2010) Diseño grafico: Photoshop</li>
+                    <a href="#koe" rel="modal:open">
+                        <li><u><b>Ingles - KOE:</b></u></li>
+                        <ul>
+                            <li>(2011) Basic Program</li>
+                            <li>(2012) Intermedian Program </li>
+                            <li>(2012) Advanced Program </li>
+                        </ul>
+                    </a>
+                        <li>(2017) Auxiliar de Venta </li>
+                    <a href="#aac" rel="modal:open">
+                        <li>(2022) Master RPA Professional </li>
+                    </a>
+                    </ul>
+                </div>
+
+
+                <div class="area">
+                    <p class="subtitle">Areas de Interes</p>
+                    <hr class="lineblack">
+                    <br>
+                    <ul>
+                        <li>RPA Developer</li>
+                        <li>Front-end Developer</li>
+                        <li>UI/UX Designer</li>
+                        <li>Back-end Developer</li>
+                        <li>DBA</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="horario">
+                    <p class="subtitle">Disponibilidad de Horario</p>
+                    <hr class="lineblack">
+                    <br>
+                    <ul class="true">
+                        <li>Jornada Completa</li>
+                        <li>Lunes a Viernes </li>
+                        <li>(8 hrs, ejemplo: 8am - 5pm)</li>
+                    </ul>
+                    <br>
+                    <ul class="false">
+                        <li>Fines de Semana</li>
+                        <li>(Sabados, Domingo) </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="referencias">
+                    <p class="subtitle">Referencias</p>
+                    <hr class="lineblack">
+                    <br>
+
+                    <div class="ref-personal">
+                        <b><u>PERSONAL</u></b>
+                        <br>
+                        <br>
+                        <ul>
+                            <li>Milagros Colon:</li>
+                            <li><span class="institucion">Comerciante</span> → (849) 209-1450</li>
+                            <br>
+                            <li>Yulidia Mercedes:</li>
+                            <li><span class="institucion">Maestra</span> → (809) 882-2127</li>
+                        </ul>
+                    </div>
+
+                    <br>
+
+                    <div class="ref-laboral">
+                        <b><u>LABORAL</u></b>
+                        <br>
+                        <br>
+                        <ul>
+                            <li>Jochy Cruz:</li>
+                            <li><span class="institucion">Disacomp</span> → (829) 601-7910</li>
+                            <br>
+                            <li>Ramon Fulgencio:</li>
+                            <li><span class="institucion">Banreservas</span> → (809) 669-1081</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+              
+            <div class="row">
+        
+                <div class="column-3" >
+                    <div class="footer-text">
+                        <ul>
+                            <li>Coded by: <b>MiguelAC Dev</b></li>
+                        </ul>
+                    </div>
+                </div>
+        
+        
+                <div class="column-3">
+                    <div class="footer-text">
+                        <ul>
+                            <li>Copyright © 2024 Endless Company, Inc</b></li>
+                        </ul>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="column-3">
+                    <div class="footer-text">
+                        <ul>
+                            <li>Designed by: <b>MiguelAC Dev</b></li>
+                        </ul>
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        
+        </div>
+
+
+    </div>
+
+    
+
+
+<script src="app.js"></script>
+</body>
+</html>
